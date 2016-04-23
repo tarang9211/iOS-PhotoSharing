@@ -32,7 +32,7 @@ class PhotoDetailViewController: UIViewController {
     }
     
     private func getComments() {
-        
+        //this function gets comments
     }
 
 }
