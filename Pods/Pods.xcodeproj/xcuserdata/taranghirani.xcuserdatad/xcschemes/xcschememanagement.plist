@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OAuthSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Flickr.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>365379835BDC2BD76F8DB830C5BE1E27</key>
+		<key>45935B91DF0442390E2CA6DEEF68AE99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A5555A2C15C7D0A9C1600862D372393</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F258247F4B801003F72EB096F6010EC</key>
+		<key>9ABA4A9820DC7F8C8F69A691DCCBAFAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
