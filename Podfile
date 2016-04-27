@@ -6,6 +6,7 @@
 target 'Flickr' do
 	pod 'Alamofire', '~> 3.3'
 	pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+	pod 'OAuthSwift', :git => 'https://github.com/OAuthSwift/OAuthSwift.git'
 end
 
 target 'FlickrTests' do
