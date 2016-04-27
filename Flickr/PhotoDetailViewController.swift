@@ -10,8 +10,11 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
     
-    var model: PhotoModel?
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var commentsTable: UITableView!
+    
+    var model: PhotoModel?
+    let userDefaults = NSUserDefaults.standardUserDefaults()
     let dataProvider = DataProvider.sharedInstance
     
     override func viewDidLoad() {
@@ -34,5 +37,5 @@ class PhotoDetailViewController: UIViewController {
     private func getComments() {
         //this function gets comments
     }
-
+    
 }

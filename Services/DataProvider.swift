@@ -9,12 +9,14 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import OAuthSwift
 
 typealias PhotoModel_Alias = (NSError?, [PhotoModel]?) -> Void
 typealias CommentModel_Alias = (NSError?, [CommentModel]?) -> Void
 
 class DataProvider {
     
+    let userDefaults = NSUserDefaults.standardUserDefaults()
     static let sharedInstance = DataProvider()
     private init() {}
     
@@ -60,6 +62,20 @@ class DataProvider {
     //This method returns comments for a particular photo
     func fetchComments(id: String, onCompletion: CommentModel_Alias) {
         
+    }
+
+    func login() {
+        let auth = OAuth1Swift(
+            consumerKey: Constants.apiKey,
+            consumerSecret: Constants.clientSecret,
+            requestTokenUrl: Constants.requestTokenUrl,
+            authorizeUrl: Constants.authorizeUrl,
+            accessTokenUrl: Constants.accessTokenUrl
+        )
+        
+        auth.authorizeWithCallbackURL(NSURL(string: "com.th.Flickr://oauth-callback/flickr")!, success: { credential, response, parameters in }, failure: { error in
+                print(error.localizedDescription)
+        })
     }
 }
 

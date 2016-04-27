@@ -10,6 +10,8 @@
 		2B10C5391CCAC8060005C8A7 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10C5381CCAC8060005C8A7 /* PhotoTableViewCell.swift */; };
 		2B10C53E1CCACB550005C8A7 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B10C53D1CCACB550005C8A7 /* placeholder.jpg */; };
 		2B10C5401CCADF6B0005C8A7 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10C53F1CCADF6B0005C8A7 /* PhotoDetailViewController.swift */; };
+		2B1A59261CD0409A00AEAF8A /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A59241CD0409A00AEAF8A /* OAuthSwift.framework */; };
+		2B1A59271CD0409A00AEAF8A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A59251CD0409A00AEAF8A /* SwiftyJSON.framework */; };
 		2B507CE01CC5821B00B6C261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B507CDF1CC5821B00B6C261 /* AppDelegate.swift */; };
 		2B507CE51CC5821B00B6C261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B507CE31CC5821B00B6C261 /* Main.storyboard */; };
 		2B507CE71CC5821B00B6C261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B507CE61CC5821B00B6C261 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		2B10C5381CCAC8060005C8A7 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		2B10C53D1CCACB550005C8A7 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		2B10C53F1CCADF6B0005C8A7 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		2B1A59241CD0409A00AEAF8A /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Flickr-ctococdltjmrrqhbbtibyjfjzykj/Build/Products/Debug-iphonesimulator/OAuthSwift.framework"; sourceTree = "<group>"; };
+		2B1A59251CD0409A00AEAF8A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Flickr-ctococdltjmrrqhbbtibyjfjzykj/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		2B507CDC1CC5821B00B6C261 /* Flickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B507CDF1CC5821B00B6C261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B507CE41CC5821B00B6C261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1A59261CD0409A00AEAF8A /* OAuthSwift.framework in Frameworks */,
+				2B1A59271CD0409A00AEAF8A /* SwiftyJSON.framework in Frameworks */,
 				2B881EBB1CC71B0400EA64CB /* Alamofire.framework in Frameworks */,
 				578C9E9B72320C83BD67008A /* Pods_Flickr.framework in Frameworks */,
 			);
@@ -203,6 +209,8 @@
 		ED861A681FB2CD97327EC9AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B1A59241CD0409A00AEAF8A /* OAuthSwift.framework */,
+				2B1A59251CD0409A00AEAF8A /* SwiftyJSON.framework */,
 				2B881EBA1CC71B0400EA64CB /* Alamofire.framework */,
 				8EA74654D0970F17D77E0BC9 /* Pods_Flickr.framework */,
 			);
@@ -546,6 +554,7 @@
 			baseConfigurationReference = A69B8A1A308B84EDC45D615D /* Pods-Flickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Flickr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.th.Flickr;
@@ -558,6 +567,7 @@
 			baseConfigurationReference = C09AF75DC322F79697790FEB /* Pods-Flickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Flickr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.th.Flickr;

@@ -117,6 +117,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="commentsTable" destination="J3m-yJ-u7S" id="kon-9L-QJz"/>
                         <outlet property="photo" destination="9Mi-ej-tN3" id="Rtb-zq-R68"/>
                     </connections>
                 </viewController>
