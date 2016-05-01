@@ -88,10 +88,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Mi-ej-tN3">
-                                <rect key="frame" x="-8" y="64" width="391" height="339"/>
+                                <rect key="frame" x="-8" y="64" width="391" height="340.5"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J3m-yJ-u7S">
-                                <rect key="frame" x="-8" y="406" width="391" height="253"/>
+                                <rect key="frame" x="-8" y="404" width="391" height="254.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -100,7 +100,7 @@
                             <constraint firstItem="9Mi-ej-tN3" firstAttribute="top" secondItem="iR2-4P-vx7" secondAttribute="bottom" id="4Xc-KB-6Mu"/>
                             <constraint firstItem="J3m-yJ-u7S" firstAttribute="leading" secondItem="W3l-iw-yuJ" secondAttribute="leadingMargin" constant="-24" id="83V-W4-sm2"/>
                             <constraint firstItem="9Mi-ej-tN3" firstAttribute="leading" secondItem="W3l-iw-yuJ" secondAttribute="leadingMargin" constant="-24" id="AC4-Ag-R84"/>
-                            <constraint firstItem="J3m-yJ-u7S" firstAttribute="top" secondItem="9Mi-ej-tN3" secondAttribute="bottom" constant="3" id="ERr-a5-Im1"/>
+                            <constraint firstItem="J3m-yJ-u7S" firstAttribute="top" secondItem="9Mi-ej-tN3" secondAttribute="bottom" id="ERr-a5-Im1"/>
                             <constraint firstItem="J3m-yJ-u7S" firstAttribute="height" secondItem="9Mi-ej-tN3" secondAttribute="height" constant="-86" id="Qb5-Dq-faO"/>
                             <constraint firstItem="6uZ-ao-2GT" firstAttribute="top" secondItem="J3m-yJ-u7S" secondAttribute="bottom" constant="8" id="UuE-Xu-QhO"/>
                             <constraint firstItem="6uZ-ao-2GT" firstAttribute="top" secondItem="9Mi-ej-tN3" secondAttribute="bottom" constant="264" id="bgI-4u-rXJ"/>
@@ -115,6 +115,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="2DL-a2-gvl">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="EZl-Od-RXe">
+                            <connections>
+                                <action selector="signInAction:" destination="WSg-Eq-wD3" id="bFW-JE-Adw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="commentsTable" destination="J3m-yJ-u7S" id="kon-9L-QJz"/>

@@ -16,4 +16,5 @@ struct Constants {
     static let authorizeUrl = "https://www.flickr.com/services/oauth/authorize"
     static let accessTokenUrl = "https://www.flickr.com/services/oauth/access_token"
     static let requestTokenUrl = "https://www.flickr.com/services/oauth/request_token"
+    static let token = "token"
 }

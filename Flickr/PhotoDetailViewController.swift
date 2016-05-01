@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import OAuthSwift
 
-class PhotoDetailViewController: UIViewController {
+class PhotoDetailViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var commentsTable: UITableView!
@@ -20,6 +21,7 @@ class PhotoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        self.navigationController?.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,10 +34,18 @@ class PhotoDetailViewController: UIViewController {
         }
         self.title = photoModel.title
         photo.downloadImage(photoModel.largePhotoUrl, duration: 0.20)
+        
     }
     
     private func getComments() {
-        //this function gets comments
+        
     }
     
+    @IBAction func signInAction(sender: AnyObject) {
+        dataProvider.login()
+    }
+    
+    func navigationController(navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated: Bool) {
+        print("called")
+    }
 }
