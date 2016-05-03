@@ -45,7 +45,4 @@ class PhotoDetailViewController: UIViewController, UINavigationControllerDelegat
         dataProvider.login()
     }
     
-    func navigationController(navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated: Bool) {
-        print("called")
-    }
 }
