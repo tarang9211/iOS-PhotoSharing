@@ -41,6 +41,8 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="7rV-eQ-5DI" firstAttribute="leading" secondItem="dhT-yz-QAM" secondAttribute="leadingMargin" constant="9" id="0tP-pT-91s"/>
+                                        <constraint firstAttribute="trailing" secondItem="Y8M-vy-eAZ" secondAttribute="trailing" id="3rn-Sm-TJn"/>
+                                        <constraint firstItem="Y8M-vy-eAZ" firstAttribute="leading" secondItem="dhT-yz-QAM" secondAttribute="leading" id="3vz-cK-lAa"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Y8M-vy-eAZ" secondAttribute="trailing" constant="-8" id="B5s-Oi-Ppl"/>
                                         <constraint firstItem="DNH-xO-yGV" firstAttribute="leading" secondItem="dhT-yz-QAM" secondAttribute="leadingMargin" constant="-8" id="C2o-rw-rNo"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="DNH-xO-yGV" secondAttribute="trailing" constant="-8" id="CWf-f2-evB"/>
@@ -52,6 +54,12 @@
                                         <constraint firstItem="DNH-xO-yGV" firstAttribute="top" secondItem="Y8M-vy-eAZ" secondAttribute="bottom" id="rgJ-2u-2fR"/>
                                         <constraint firstItem="Y8M-vy-eAZ" firstAttribute="leading" secondItem="dhT-yz-QAM" secondAttribute="leadingMargin" constant="-8" id="tsF-YG-GhX"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="B5s-Oi-Ppl"/>
+                                            <exclude reference="tsF-YG-GhX"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
